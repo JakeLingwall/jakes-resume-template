@@ -1,0 +1,93 @@
+body{
+  background-color: black;
+  font-family: 'helvetica';
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+.resume{
+  box-sizing: border-box;
+  width: 8.5in;
+  height: 11in;
+  background-color: white;
+  padding: .5in .75in;
+  overflow: hidden;
+
+  .header{
+    text-align: center;
+    h1{
+      margin: 0;
+      text-align: center;
+      padding-bottom: 5px;
+    }
+    .sub-text{
+      span{
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .experience{
+    margin-top: 10px;
+
+    .job-listing{
+      margin-bottom: 10px;
+    }
+
+    .image-holder{
+      display: inline-block;
+      vertical-align: top;
+      max-width: 60px;
+      overflow: hidden;
+      padding-right: 5px;
+
+      img{
+        max-width: 60px;
+      }
+    }
+    .job-holder{
+      display: inline-block;
+      width: 600px;
+      .job-header{
+        display: inline-block;
+        vertical-align: top;
+        width: 600px;
+
+        .title{
+          font-size: 20px;
+          font-weight: bold;
+          display: inline-block;
+        }
+        .timeline{
+          display: inline-block;
+          float: right;
+          line-height: 24px;
+        }
+      }
+      .job-body{
+        margin: 0;
+        display: inline-block;
+        margin-left: -20px;
+        margin-top: -10px;
+
+
+      }
+    }
+  }
+}
+h2{
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+hr{
+  padding: 0;
+  margin: 0;
+  color: blue;
+}
+
+ul{
+  li{
+    margin-bottom: 2px;
+  }
+}

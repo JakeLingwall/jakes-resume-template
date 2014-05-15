@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+  font-family: 'helvetica';
+  font-size: 12px;
+  margin: 0;
+  padding: 0; }
+
+.resume {
+  box-sizing: border-box;
+  width: 8.5in;
+  height: 11in;
+  background-color: white;
+  padding: .5in .75in;
+  overflow: hidden; }
+  .resume .header {
+    text-align: center; }
+    .resume .header h1 {
+      margin: 0;
+      text-align: center;
+      padding-bottom: 5px; }
+    .resume .header .sub-text span {
+      padding: 0 5px; }
+  .resume .experience {
+    margin-top: 10px; }
+    .resume .experience .job-listing {
+      margin-bottom: 10px; }
+    .resume .experience .image-holder {
+      display: inline-block;
+      vertical-align: top;
+      max-width: 60px;
+      overflow: hidden;
+      padding-right: 5px; }
+      .resume .experience .image-holder img {
+        max-width: 60px; }
+    .resume .experience .job-holder {
+      display: inline-block;
+      width: 600px; }
+      .resume .experience .job-holder .job-header {
+        display: inline-block;
+        vertical-align: top;
+        width: 600px; }
+        .resume .experience .job-holder .job-header .title {
+          font-size: 20px;
+          font-weight: bold;
+          display: inline-block; }
+        .resume .experience .job-holder .job-header .timeline {
+          display: inline-block;
+          float: right;
+          line-height: 24px; }
+      .resume .experience .job-holder .job-body {
+        margin: 0;
+        display: inline-block;
+        margin-left: -20px;
+        margin-top: -10px; }
+
+h2 {
+  color: #aaa;
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+hr {
+  padding: 0;
+  margin: 0;
+  color: blue; }
+
+ul li {
+  margin-bottom: 2px; }

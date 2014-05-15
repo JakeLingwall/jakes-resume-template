@@ -1,0 +1,86 @@
+<div class="resume">
+  <div class="header">
+    <h1>{{resumeObject.contact.name}}</h1>
+    <div class="sub-text">
+      <span>{{resumeObject.contact.phone}}</span>
+      &bull;
+      <span>{{resumeObject.contact.email}}</span>
+      &bull;
+      <span>{{resumeObject.contact.twitter}}</span>
+      &bull;
+      <span>{{resumeObject.contact.linkedin}}</span>
+    </div>
+  </div>
+  <hr/>
+  <hr/>
+  <hr/>
+  <div class="experience">
+    <h2>Experience</h2>
+    <div ng-repeat="job in resumeObject.experience" class="job-listing">
+      <div class="image-holder">
+        <img ng-src="{{job.imageUrl}}"/>
+      </div>
+      <div class="job-holder">
+        <div class="job-header">
+          <div class="title">{{job.company}} - {{job.position}}</div>
+          <div class="timeline">
+            {{job.startDate}} - {{job.endDate || 'Present'}}
+          </div>
+        </div>
+        <div class="job-body">
+          <ul>
+            <li ng-repeat="bullet in job.bullets">
+              {{bullet}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="experience">
+    <h2>Education</h2>
+    <div ng-repeat="school in resumeObject.education" class="job-listing">
+      <div class="image-holder">
+        <img ng-src="{{school.imageUrl}}"/>
+      </div>
+      <div class="job-holder">
+        <div class="job-header">
+          <div class="title">{{school.position}}</div>
+          <div class="timeline">
+            {{school.startDate}} - {{school.endDate || 'Present'}}
+          </div>
+        </div>
+        <div class="job-body">
+          <ul>
+            <li ng-repeat="bullet in school.bullets">
+              {{bullet}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="experience">
+    <h2>Projects</h2>
+    <div ng-repeat="project in resumeObject.projects" class="job-listing">
+      <div class="image-holder">
+        <img ng-src="{{project.imageUrl}}"/>
+      </div>
+      <div class="job-holder">
+        <div class="job-header">
+          <div class="title">{{project.company}} - {{project.position}}</div>
+          <div class="timeline">
+            {{project.startDate}} - {{project.endDate || 'Present'}}
+          </div>
+        </div>
+        <div class="job-body">
+          <ul>
+            <li ng-repeat="bullet in project.bullets">
+              {{bullet}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
